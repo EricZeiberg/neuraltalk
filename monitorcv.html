@@ -54,7 +54,7 @@ body {
 // you'll have to change this code if you want to use it yourself to point to correct JSON files
 // refresh()
 
-NUM = 40;
+NUM = 1;
 
 params_seen = {};
 
@@ -116,7 +116,7 @@ function updateWorker(i, status_struct) {
 function refresh() {
   // load all jsons
   for(var i=1;i<=NUM;i++) {
-    var json_path = 'status/visionlab'+i+'.stanford.edu_status.json';
+    var json_path = 'status/NeuralTalk_status.json';
     $.getJSON(json_path, function(q){
       return function(data) {
         updateWorker(q, data);
