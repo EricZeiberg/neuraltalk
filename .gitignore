@@ -1,0 +1,5 @@
+*.pyc
+cv/*.p
+data/
+*.caffemodel
+auto/
